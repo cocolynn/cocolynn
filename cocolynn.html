@@ -1,56 +1,66 @@
 <!DOCTYPE html>  
-<html lang="zh-CN">  
+<html>  
 <head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>我的网页</title>  
-    <style>  
-        /* 在这里添加您的CSS样式 */  
-        body {  
-            font-family: Arial, sans-serif;  
-            margin: 0;  
-            padding: 20px;  
-        }  
-          
-        h1 {  
-            color: #333333;  
-        }  
-          
-        p {  
-            color: #666666;  
-        }  
-    </style>  
+  <title>Cocolynn</title>  
+  <style>  
+    /* 添加简单的样式 */  
+    body {  
+      font-family: Arial, sans-serif;  
+      margin: 0;  
+      padding: 0;  
+    }  
+    header {  
+      background-color: #333;  
+      color: #fff;  
+      padding: 10px;  
+      text-align: center;  
+    }  
+    section {  
+      padding: 20px;  
+    }  
+  </style>  
 </head>  
 <body>  
-    <header>  
-        <h1>欢迎来到我的网页！</h1>  
-    </header>  
-      
-    <nav>  
-        <ul>  
-            <li><a href="#section1">部分 1</a></li>  
-            <li><a href="#section2">部分 2</a></li>  
-            <li><a href="#section3">部分 3</a></li>  
-        </ul>  
-    </nav>  
-      
-    <section id="section1">  
-        <h2>部分 1 标题</h2>  
-        <p>这是部分 1 的内容。</p>  
-    </section>  
-      
-    <section id="section2">  
-        <h2>部分 2 标题</h2>  
-        <p>这是部分 2 的内容。</p>  
-    </section>  
-      
-    <section id="section3">  
-        <h2>部分 3 标题</h2>  
-        <p>这是部分 3 的内容。</p>  
-    </section>  
-      
-    <footer>  
-        <p>版权所有 © 2023 我的网页</p>  
-    </footer>  
+  <header>  
+    <h1>Cocolynn</h1>  
+  </header>  
+    
+  <section id="home">  
+    <h2>首页</h2>  
+    <p>这里是首页内容。</p>  
+  </section>  
+    
+  <section id="about">  
+    <h2>关于我们</h2>  
+    <p>关于我们的详细信息。</p>  
+  </section>  
+    
+  <section id="services">  
+    <h2>服务</h2>  
+    <ul>  
+      <li>服务1</li>  
+      <li>服务2</li>  
+      <li>服务3</li>  
+    </ul>  
+  </section>  
+    
+  <section id="contact">  
+    <h2>联系我们</h2>  
+    <form action="/contact" method="post">  
+      <label for="name">姓名:</label>  
+      <input type="text" id="name" name="name" required><br><br>  
+        
+      <label for="email">邮箱:</label>  
+      <input type="email" id="email" name="email" required><br><br>  
+        
+      <label for="message">留言:</label><br>  
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>  
+        
+      <input type="submit" value="提交">  
+    </form>  
+  </section>  
+    
+  <!-- 添加 JavaScript 代码以实现一些交互功能 -->  
+  <script src="script.js"></script>  
 </body>  
 </html>
